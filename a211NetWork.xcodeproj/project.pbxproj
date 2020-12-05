@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		3B167ADA257B74BD00E56803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B167AD8257B74BD00E56803 /* Main.storyboard */; };
 		3B167ADC257B74BF00E56803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B167ADB257B74BF00E56803 /* Assets.xcassets */; };
 		3B167ADF257B74BF00E56803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B167ADD257B74BF00E56803 /* LaunchScreen.storyboard */; };
+		3B167AF5257B819200E56803 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B167AF4257B819200E56803 /* APIModel.swift */; };
+		C64695199928F477EBA0FAC7 /* Pods_a211NetWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F0A20D30CCBB8A1F3ADDAD /* Pods_a211NetWork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1654FAAAD4CED17D8ABBAB5E /* Pods-a211NetWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a211NetWork.debug.xcconfig"; path = "Target Support Files/Pods-a211NetWork/Pods-a211NetWork.debug.xcconfig"; sourceTree = "<group>"; };
 		3B167ACF257B74BD00E56803 /* a211NetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a211NetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B167AD2257B74BD00E56803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B167AD4257B74BD00E56803 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		3B167ADB257B74BF00E56803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B167ADE257B74BF00E56803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B167AE0257B74BF00E56803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B167AF4257B819200E56803 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		50F0A20D30CCBB8A1F3ADDAD /* Pods_a211NetWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_a211NetWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC62E1B8BFC794D2C4FC1AAA /* Pods-a211NetWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a211NetWork.release.xcconfig"; path = "Target Support Files/Pods-a211NetWork/Pods-a211NetWork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64695199928F477EBA0FAC7 /* Pods_a211NetWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				3B167AD1257B74BD00E56803 /* a211NetWork */,
 				3B167AD0257B74BD00E56803 /* Products */,
+				6150A0886FE2E2DCDF079949 /* Pods */,
+				B779E7E8A71085B78830E187 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				3B167ADB257B74BF00E56803 /* Assets.xcassets */,
 				3B167ADD257B74BF00E56803 /* LaunchScreen.storyboard */,
 				3B167AE0257B74BF00E56803 /* Info.plist */,
+				3B167AF4257B819200E56803 /* APIModel.swift */,
 			);
 			path = a211NetWork;
+			sourceTree = "<group>";
+		};
+		6150A0886FE2E2DCDF079949 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1654FAAAD4CED17D8ABBAB5E /* Pods-a211NetWork.debug.xcconfig */,
+				FC62E1B8BFC794D2C4FC1AAA /* Pods-a211NetWork.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B779E7E8A71085B78830E187 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50F0A20D30CCBB8A1F3ADDAD /* Pods_a211NetWork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B167AE3257B74BF00E56803 /* Build configuration list for PBXNativeTarget "a211NetWork" */;
 			buildPhases = (
+				6B287215BF09BC94297AB7E6 /* [CP] Check Pods Manifest.lock */,
 				3B167ACB257B74BD00E56803 /* Sources */,
 				3B167ACC257B74BD00E56803 /* Frameworks */,
 				3B167ACD257B74BD00E56803 /* Resources */,
+				ABEFA2EB840B84D60C68008A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +161,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6B287215BF09BC94297AB7E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-a211NetWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABEFA2EB840B84D60C68008A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a211NetWork/Pods-a211NetWork-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a211NetWork/Pods-a211NetWork-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-a211NetWork/Pods-a211NetWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B167ACB257B74BD00E56803 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B167AF5257B819200E56803 /* APIModel.swift in Sources */,
 				3B167AD7257B74BD00E56803 /* ViewController.swift in Sources */,
 				3B167AD3257B74BD00E56803 /* AppDelegate.swift in Sources */,
 				3B167AD5257B74BD00E56803 /* SceneDelegate.swift in Sources */,
@@ -283,6 +355,7 @@
 		};
 		3B167AE4257B74BF00E56803 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1654FAAAD4CED17D8ABBAB5E /* Pods-a211NetWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		3B167AE5257B74BF00E56803 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC62E1B8BFC794D2C4FC1AAA /* Pods-a211NetWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
