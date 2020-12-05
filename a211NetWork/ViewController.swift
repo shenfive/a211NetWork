@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         apiModel.queryRandomUserAlamofire { (data, error) in
             let json = JSON(data)
-            print(json)
+            print(json["results"][0]["picture"]["large"].stringValue)
         }
         
     }
