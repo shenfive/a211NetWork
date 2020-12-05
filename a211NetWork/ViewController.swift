@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         let apiModel = APIModel.share
         
         apiModel.queryRandomUserAlamofire { (data, error) in
-            
+            let json = JSON(data)
+            print(json)
         }
         
     }

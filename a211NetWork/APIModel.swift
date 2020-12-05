@@ -27,6 +27,7 @@ class APIModel{
                             case .success(_):
                                 return completion(response.data,nil)
                             case .failure(let error):
+                                print(error.localizedDescription)
                                 return completion(nil,error)
                             }
                         })
