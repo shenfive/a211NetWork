@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let apiModel = APIModel.share
+        
+        apiModel.queryRandomUserAlamofire { (data, error) in
+            
+        }
+        
     }
 
 
