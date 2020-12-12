@@ -40,6 +40,18 @@
                                     <constraint firstAttribute="bottom" secondItem="3H9-mF-4ew" secondAttribute="bottom" id="nFr-TI-lgv"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTf-hD-Nf3">
+                                <rect key="frame" x="314" y="792" width="60" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="dHI-NB-hh7"/>
+                                    <constraint firstAttribute="height" constant="30" id="sNZ-Mh-xPj"/>
+                                </constraints>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updagteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JUS-15-bpA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -47,6 +59,8 @@
                             <constraint firstItem="wCk-bm-UOb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7lD-Hm-M72"/>
                             <constraint firstItem="wCk-bm-UOb" firstAttribute="top" secondItem="ema-Np-bBi" secondAttribute="top" id="MDV-R0-IRR"/>
                             <constraint firstItem="ema-Np-bBi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QPS-TB-sjd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KTf-hD-Nf3" secondAttribute="trailing" constant="40" id="brd-Z1-bWV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KTf-hD-Nf3" secondAttribute="bottom" constant="40" id="mDU-br-TQY"/>
                             <constraint firstItem="ema-Np-bBi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x7S-Gf-Rph"/>
                         </constraints>
                     </view>

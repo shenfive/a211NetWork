@@ -52,6 +52,9 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func updagteAction(_ sender: Any) {
+        updateUser()
+    }
     
     
     
