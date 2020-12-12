@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var cont: UIView!
     @IBOutlet weak var headImageView: UIImageView!
+    @IBOutlet weak var name: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
         }
     }
 
+
     func updateUser(){
         let apiModel = APIModel.share
         apiModel.queryRandomUserAlamofire { (data, error) in
@@ -46,7 +48,15 @@ class ViewController: UIViewController {
                 return
             }
             let json = JSON(data)
-            print(json["results"][0]["picture"]["large"].stringValue)
+            print(json)
+            let newName = json["results"][0]["name"]["title"].stringValue
+                + " "
+                + json["results"][0]["name"]["first"].stringValue
+                + " "
+                + json["results"][0]["name"]["last"].stringValue
+            
+            self.name.text = newName
+            
             let imageUrlString = json["results"][0]["picture"]["large"].stringValue
             self.headImageView.kf.setImage(with: URL(string: imageUrlString))
         }
