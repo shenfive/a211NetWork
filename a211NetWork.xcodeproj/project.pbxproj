@@ -14,6 +14,7 @@
 		3B167ADC257B74BF00E56803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B167ADB257B74BF00E56803 /* Assets.xcassets */; };
 		3B167ADF257B74BF00E56803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B167ADD257B74BF00E56803 /* LaunchScreen.storyboard */; };
 		3B167AF5257B819200E56803 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B167AF4257B819200E56803 /* APIModel.swift */; };
+		3B80A2342584A890008E4324 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B80A2322584A890008E4324 /* Reachability.m */; };
 		C64695199928F477EBA0FAC7 /* Pods_a211NetWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F0A20D30CCBB8A1F3ADDAD /* Pods_a211NetWork.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,9 @@
 		3B167ADE257B74BF00E56803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B167AE0257B74BF00E56803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B167AF4257B819200E56803 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		3B80A2312584A88F008E4324 /* a211NetWork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "a211NetWork-Bridging-Header.h"; sourceTree = "<group>"; };
+		3B80A2322584A890008E4324 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3B80A2332584A890008E4324 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		50F0A20D30CCBB8A1F3ADDAD /* Pods_a211NetWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_a211NetWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC62E1B8BFC794D2C4FC1AAA /* Pods-a211NetWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a211NetWork.release.xcconfig"; path = "Target Support Files/Pods-a211NetWork/Pods-a211NetWork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +69,8 @@
 		3B167AD1257B74BD00E56803 /* a211NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				3B80A2332584A890008E4324 /* Reachability.h */,
+				3B80A2322584A890008E4324 /* Reachability.m */,
 				3B167AD2257B74BD00E56803 /* AppDelegate.swift */,
 				3B167AD4257B74BD00E56803 /* SceneDelegate.swift */,
 				3B167AD6257B74BD00E56803 /* ViewController.swift */,
@@ -73,6 +79,7 @@
 				3B167ADD257B74BF00E56803 /* LaunchScreen.storyboard */,
 				3B167AE0257B74BF00E56803 /* Info.plist */,
 				3B167AF4257B819200E56803 /* APIModel.swift */,
+				3B80A2312584A88F008E4324 /* a211NetWork-Bridging-Header.h */,
 			);
 			path = a211NetWork;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 				TargetAttributes = {
 					3B167ACE257B74BD00E56803 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -212,6 +220,7 @@
 				3B167AD7257B74BD00E56803 /* ViewController.swift in Sources */,
 				3B167AD3257B74BD00E56803 /* AppDelegate.swift in Sources */,
 				3B167AD5257B74BD00E56803 /* SceneDelegate.swift in Sources */,
+				3B80A2342584A890008E4324 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				INFOPLIST_FILE = a211NetWork/Info.plist;
@@ -368,6 +378,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idv.sjw.a211NetWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "a211NetWork/a211NetWork-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				INFOPLIST_FILE = a211NetWork/Info.plist;
@@ -388,6 +401,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idv.sjw.a211NetWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "a211NetWork/a211NetWork-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
